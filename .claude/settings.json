@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR}/Skripte/brain-check.py\" --hook",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

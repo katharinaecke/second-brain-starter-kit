@@ -1,0 +1,13 @@
+# Zeilenenden: im Repo und im Arbeitsverzeichnis durchgängig LF.
+#
+# Ohne diese Datei entscheidet die lokale core.autocrlf-Einstellung. Steht sie unter
+# Windows auf true (Standard vieler Installationen), schreibt Git beim Checkout CRLF und
+# warnt danach bei jedem Befehl "LF will be replaced by CRLF". Schlimmer als die Warnung
+# ist der Effekt bei mehreren Geräten: Ein Vault, der abwechselnd unter Windows und
+# macOS/Linux bearbeitet wird, produziert sonst Diffs über ganze Dateien, in denen die
+# echte inhaltliche Änderung untergeht.
+#
+# eol=lf erzwingt LF unabhängig von der lokalen Einstellung. Das ist hier unkritisch:
+# Der Inhalt sind Markdown-Dateien und portables Python, beides verträgt LF überall,
+# auch im Windows-Editor.
+* text=auto eol=lf

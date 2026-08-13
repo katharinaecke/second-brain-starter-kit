@@ -1,0 +1,8 @@
+.obsidian/
+.brain-check-letzte-erinnerung
+*.tmp
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.claude/settings.local.json
